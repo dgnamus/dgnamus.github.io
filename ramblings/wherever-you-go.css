@@ -1,0 +1,151 @@
+html, body {
+    margin: 0;
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;     
+    width: 100%;  
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* ABOUT SECTION */
+
+.about {    
+    font-size: 150%;
+    color: white;    
+    text-shadow: 2px 2px black;
+    background-image: linear-gradient(to bottom, #c9c9df66, rgba(132, 132, 182, 0.4)), url("../imgs/1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;  
+    background-attachment: fixed;      
+    display: flex;
+    justify-content: center;    
+    height: 70vh;
+}
+
+.hello-there {    
+    width: 50%;
+    height: 50%;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+}
+
+.hello-there > * {
+    align-self: center;
+    text-align: center;    
+}
+
+.hello-there > p {
+    opacity: 0.8;
+}
+
+h1 {    
+    font-family: 'Merriweather', serif;
+    text-transform: uppercase;
+}
+
+/* WORK SECTION */ 
+
+article {    
+    margin: 2rem 20%;
+    text-align: justify;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.work {    
+    background-color: white;
+    color: black;    
+    display: grid;            
+}
+
+.project {
+    margin: 3rem auto 2rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;    
+    justify-self: center; 
+    width: 70%;
+}
+
+.project > h3 {
+    margin-bottom: 1rem;
+    font-weight: lighter;    
+}
+
+img {
+    width: 100%;    
+    border-radius: 2px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.30);
+    margin-top: 2rem;
+}
+
+/* CONTACT SECTION */
+
+
+footer {    
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    color: white;
+}
+
+footer > p {
+    align-self: center;
+    margin: 0;
+}
+
+.fade {
+    opacity: 1;
+    transition: opacity .25s ease-in-out;
+    -moz-transition: opacity .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out;
+    }
+ 
+.fade:hover {
+    opacity: 0.5;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 768px){
+    nav {                 
+        justify-content: center;           
+    }
+
+    .work {              
+        display: flex;
+        flex-direction: column;  
+    }
+
+    .contact-me {
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 368px){
+    .contact {
+        height: max-content;
+    }
+
+    .contact-options {    
+        display: flex;
+        flex-direction: column;                   
+    }
+
+    .contact-option {
+        margin: 10px 0px 10px 0px;
+    }
+
+    article {    
+        margin: 1rem 5%;             
+    }
+}

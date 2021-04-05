@@ -1,0 +1,214 @@
+html, body {
+    margin: 0;
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;     
+    width: 100%;  
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* NAVBAR */ 
+
+header {    
+    z-index: 1;
+    position: fixed;
+    margin: 0;
+    width: 100%;
+    height: 10vh;
+    background-color: rgba(0,0,0,0.9);
+    color: white;
+    top: 0;
+}
+
+nav {    
+    height: 100%;
+    width: 90%;
+    display: flex;    
+    justify-content: flex-end;
+    align-content: center;
+    margin: 0 auto 0 auto;
+}
+
+.nav-choice {    
+    margin: 0 20px 0 20px;
+    align-self: center;
+    text-transform: uppercase;
+}
+
+/* ABOUT SECTION */
+
+.about {    
+    font-size: 150%;
+    color: white;    
+    text-shadow: 2px 2px black;
+    background-image: linear-gradient(to bottom, #c9c9df66, rgba(132, 132, 182, 0.4)), url("imgs/naslovnica.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;  
+    background-attachment: fixed;  
+    margin-top: 10vh;
+    display: flex;
+    justify-content: center;    
+    height: 70vh;
+}
+
+.hello-there {    
+    width: 50%;
+    height: 50%;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+}
+
+.hello-there > * {
+    align-self: center;
+    text-align: center;    
+}
+
+.hello-there > p {
+    opacity: 0.8;
+}
+
+h1 {    
+    font-family: 'Merriweather', serif;
+    text-transform: uppercase;
+}
+
+/* WORK SECTION */ 
+
+.work {    
+    background-color: white;
+    color: black;    
+    display: grid;            
+}
+
+.project {
+    margin: 3rem auto 2rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;    
+    justify-self: center; 
+    width: 70%;
+}
+
+.project > h3 {
+    margin-bottom: 1rem;
+    font-weight: lighter;    
+}
+
+img {
+    width: 100%;    
+    border-radius: 2px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.30);
+    margin-top: 2rem;
+}
+
+/* CONTACT SECTION */
+.contact {   
+    margin-top: 2rem;
+    height: 40vh;
+    background-color: white;
+    display: flex;  
+    flex-direction: column;  
+}
+
+.contact-me {    
+    display: flex;    
+    flex-direction: column;    
+    justify-content: center;    
+    height: 30%;
+    text-align: center;
+}
+
+.contact-options {    
+    display: flex;
+    justify-content: space-evenly;   
+    height: 70%;   
+}
+
+.contact-options > div {
+    align-self: center;
+}
+
+h2, h3 {        
+    margin: 0;    
+    align-self: center;
+}
+
+h2 {
+    font-family: 'Merriweather', serif;
+}
+
+.contact h3 {
+    font-weight: lighter;
+    opacity: 0.8;
+}
+
+.contact-option {
+    display: flex;
+}
+
+.contact-option > i {
+    align-self: center;    
+}
+
+footer {    
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    color: white;
+}
+
+footer > p {
+    align-self: center;
+    margin: 0;
+}
+
+.fade {
+    opacity: 1;
+    transition: opacity .25s ease-in-out;
+    -moz-transition: opacity .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out;
+    }
+ 
+.fade:hover {
+    opacity: 0.5;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 768px){
+    nav {                 
+        justify-content: center;           
+    }
+
+    .work {              
+        display: flex;
+        flex-direction: column;  
+    }
+
+    .contact-me {
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 368px){
+    .contact {
+        height: max-content;
+    }
+
+    .contact-options {    
+        display: flex;
+        flex-direction: column;                   
+    }
+
+    .contact-option {
+        margin: 10px 0px 10px 0px;
+    }
+}
